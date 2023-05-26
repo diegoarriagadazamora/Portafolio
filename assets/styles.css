@@ -25,11 +25,11 @@ html {
     scroll-padding-top: 57px;
   }
 @media screen and (min-width: 952px){
-html header.header h1.banner__titulo
+html header.header
  img nav ul li a div
  .banner__contenedor
  ul .nav__lista
- li.nav__item .typing{
+ li.nav__item {
     padding-left: 20px;
     font-size: 16px;
 }
@@ -39,7 +39,7 @@ html header.header h1.banner__titulo
     img nav ul li a div
     .banner__contenedor
     ul .nav__lista
-    .li.nav__item .typing{
+    .li.nav__item {
     font-size: 16px;
     display: block;
     }
