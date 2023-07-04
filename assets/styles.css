@@ -22,9 +22,8 @@
 
 html {
     scroll-behavior:smooth;
-    window.scrollTo({ top: 0, behavior: 'smooth'});
   }
-@media screen and (min-width: 952px){
+@media (750px <= width <= 800px){
 html header.header
  img nav ul li a div
  .banner__contenedor
@@ -34,7 +33,7 @@ html header.header
     font-size: 16px;
 }
 }
-@media (max-width: 858px){
+@media (750px <= width <= 800px){
    html header.header h1.banner__titulo
     img nav ul li a div
     .banner__contenedor
@@ -632,7 +631,7 @@ nav {
     box-shadow: 2px 2px 30px 2px #000000;
 }
 
-@media screen and (min-width: 1024px) {
+@media (750px <= width <= 800px) {
     .soft-skills__img{
         display: none;
     }
