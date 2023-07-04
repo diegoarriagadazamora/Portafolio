@@ -21,8 +21,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 57px;
+    scroll-behavior:smooth;
+    window.scrollTo({ top: 0, behavior: 'smooth'});
   }
 @media screen and (min-width: 952px){
 html header.header
