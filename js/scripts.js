@@ -5,16 +5,7 @@ const menu = document.querySelector('.menu');
 menuIcon.addEventListener('click', () => {
   menu.classList.toggle('show-menu');
 }); */
-/* Script para botón ver más */
-document.getElementById("view-more").addEventListener("click", function() {
-  var hiddenText = document.getElementById("hidden-text");
-  hiddenText.classList.toggle("hidden");
-  if (hiddenText.classList.contains("hidden")) {
-    this.textContent = "Ver más";
-  } else {
-    this.textContent = "Ver menos";
-  }
-});
+
 /*Llamando todos los inputs*/
 const inputs = document.querySelectorAll("input,textarea");
 
