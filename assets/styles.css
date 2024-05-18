@@ -488,15 +488,15 @@ nav {
 }
 /* Estilos sección sobre mi */
 .sobre-mi{
-    display: flex;
-    flex-direction: column;
-}
-/* Botón ver más sobre mí*/
-.content {
-    max-height: 100px;
+    /* Ajusta el tamaño del contenedor según sea necesario */
+    max-width: 100%;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
+}
+
+.content {
+    /* Permitir que el texto se ajuste automáticamente */
+    word-wrap: break-word;
+}
 
   button {
     max-height: none;
