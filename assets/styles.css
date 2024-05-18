@@ -1,24 +1,18 @@
 /* Estilos root */
-:root{
-
-    /*Fuentes*/
+:root {
+    /* Definición de variables */
     --font-padron: 'Montserrat', sans-serif;
     --font-hijo: 'Merriweather', serif;
-
-    /*Colores*/
-    --color-menu:#ffffff;
+    --color-menu: #ffffff;
     --color-fuente-enlace: #3b06d8;
     --color-fondo: #191825;
     --color-fondo-secundario: #ECF2FF;
     --valido: #1ed12d;
     --invalido: #bb2929;
-
-    /*fondos*/
     --activo: #81bbfd;
-
-    /*sombra*/
-     --sombra: rgba(163,163,163,0.5);
+    --sombra: rgba(163, 163, 163, 0.5);
 }
+
 
 html {
     scroll-behavior:smooth;
@@ -56,9 +50,11 @@ html header.header
     }
 }
 
-body{
+/* Estilos generales */
+body {
     font-family: var(--font-padron);
-    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 .titulo__principal{
@@ -1052,13 +1048,7 @@ color: var(--color-fuente-enlace);
 .agredecimiento__titulo{
     margin-bottom: 1rem;
 }
-/* Estilo para el footer */
-.footer{
-    background-color: var(--color-fondo);
-    color: var(--color-menu);
-    padding: 1rem;
-    text-align: center;
-}
+
 /* */
 body {
     font-family: Arial, sans-serif;
@@ -1091,3 +1081,13 @@ body {
     p {
     margin-left: 5%;
     }
+/* Estilos del footer */
+.footer {
+    background-color: var(--color-fondo);
+    color: var(--color-menu);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
