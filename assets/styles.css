@@ -1,21 +1,21 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Root Styles */
 :root {
+    /* Fonts */
     --font-padron: 'Montserrat', sans-serif;
     --font-hijo: 'Merriweather', serif;
+
+    /* Colors */
     --color-menu: #ffffff;
     --color-fuente-enlace: #3b06d8;
     --color-fondo: #191825;
     --color-fondo-secundario: #ECF2FF;
     --valido: #1ed12d;
     --invalido: #bb2929;
+
+    /* Backgrounds */
     --activo: #81bbfd;
+
+    /* Shadows */
     --sombra: rgba(163, 163, 163, 0.5);
 }
 
@@ -30,40 +30,19 @@ body {
     padding: 0;
     font-family: var(--font-padron);
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-header, .container, footer {
-    flex-shrink: 0;
+.titulo__principal {
+    font-family: var(--font-hijo);
+    text-align: center;
 }
 
 .container {
-    flex: 1;
     padding: 30px;
     padding-bottom: 5px;
 }
 
-footer {
-    background: #333;
-    color: var(--color-menu);
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: var(--color-menu);
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: var(--color-fuente-enlace);
-}
-
-/* Your existing styles here... */
-
-/* Navigation and Header */
+/* Header and Navigation */
 header {
     background-color: var(--color-fondo);
     display: flex;
@@ -385,49 +364,31 @@ nav {
     display: flex;
     flex-direction: column;
     width: 170px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-fondo-secundario);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: 0.5s all ease-in-out;
-}
-
-@media screen and (min-width: 780px) {
-    .formacion__contenido {
-        height: 350px;
-    }
-}
-
-.formacion__contenido:hover {
-    background-color: var(--color-fuente-enlace);
-}
-
-.formacion__contenido:hover .formacion__img-contenido {
-    opacity: 1;
-}
-
-.formacion__contenido:hover .formacion__img {
-    opacity: 0;
+    height: 170px;
+    margin-bottom: 1rem;
 }
 
 .formacion__img {
-    height: 100%;
     width: 100%;
-    opacity: 1;
-    transition: 0.5s all ease-in-out;
+    height: 170px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .formacion__img-contenido {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    padding: 1rem;
+    background: var(--color-fondo-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
     opacity: 0;
-    transition: 0.5s all ease-in-out;
+    padding: 1rem;
+    font-size: 0.8rem;
 }
 
 .formacion__img-contenido p {
@@ -493,4 +454,21 @@ nav {
 
 .formulario__btn:hover {
     background: var(--activo);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: var(--color-menu);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--color-menu);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-fuente-enlace);
 }
