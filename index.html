@@ -20,13 +20,13 @@
     <header class="header">
 
         <div class="logo">
-
         </div>
-
+        
         <ul class="nav__lista" class="menu">
+            <li class="nav__item"><img src="/assets/img/Java-Full-Stack.png" alt="FullStack" height="80"></li>
+             
             <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mi</a></li>
             <li class="nav__item"><a href="#conocimientos" class="nav__link">Conocimientos</a></li>
-            <li class="nav__item"><a href="#hobbies" class="nav__link">Hobbies</a></li>
             <li class="nav__item"><a href="#formaciones" class="nav__link">Formación</a></li>
             <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
             <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
@@ -76,13 +76,15 @@
                 <p class="sobre-mi__descripcion"></p>
 
                 <p class="content"> <em> <strong> Soy Diego Arriagada </strong>, amante de la tecnología y la
-                        programación FullStack...</em> <em> <strong> Developer Jr BackEnd Java||SpringBoot||Sql con MySql</strong> </em> aprendiendo en Alkemy||EnglishAlways(Beca Talento Digital) y a la par aprendo
-                            en <strong style="color: yellow; background-color: black;">Todo<span2 style="color:red">{
-                            </span2>ode Academy</strong>.
-                        Anteriormente he términado un Diplomado en diseño y programación web impartido por AIEP y Sence
-                        en la cual aprendí lo básico de Html5, Css3, Javascript y Wordpress, y esto no termina
-                        ahí, porque me encanta seguir aprendiendo más cosas y seguir profundizando en la materia, al
-                        termino de esta cursada profundizaré en Java y SpringBoot.</p>
+                        programación FullStack...</em> <em> <strong> Developer Jr BackEnd Java||SpringBoot||Sql con
+                            MySql</strong> </em> aprendiendo en Alkemy||EnglishAlways(Beca Talento Digital) y a la par
+                    aprendo
+                    en <strong style="color: yellow; background-color: black;">Todo<span2 style="color:red">{
+                        </span2>ode Academy</strong>.
+                    Anteriormente he términado un Diplomado en diseño y programación web impartido por AIEP y Sence
+                    en la cual aprendí Html5, Css3, Javascript y Wordpress, y esto no termina
+                    ahí, porque me encanta seguir aprendiendo más cosas y seguir profundizando en la materia, al
+                    termino de esta cursada profundizaré en Java y SpringBoot.</p>
 
             </article>
 
@@ -94,8 +96,11 @@
                     <li class="soft-skills__items"><em>Trabajo en equipo</em></li>
                     <li class="soft-skills__items"><em>Gestión del tiempo</em></li>
                     <li class="soft-skills__items"><em>Responsabilidad</em></li>
-                    <li class="soft-skills__items"><em>Resolución de problemas</em></li>
                     <li class="soft-skills__items"><em>Habilidades interpersonales</em></li>
+                    <li class="soft-skills__items"><em>Resolución de problemas</em></li>
+
+                    <li class="soft-skills__items"><em>Pensamiento Crítico</em></li>
+                    <li class="soft-skills__items"><em>Empatía</em></li>
                 </ul>
                 <img class="soft-skills__img" src="assets/img/imgen-decorativo.jpg" alt="escritorio con una laptop"
                     srcset="">
@@ -216,12 +221,13 @@
                     <img src="assets/logosAcademicosYCursos/todocode.jpg" alt="Logo de todocode" class="formacion__img">
                     <div class="formacion__img-contenido">
                         <h3 class="formacion__titulo"><em><strong>todocode</strong></em></h3>
-                        <p class="formacion__descripcion"><em><strong>Java + SpringBoot + MySql</strong></em></p>
+                        <p class="formacion__descripcion"><em><strong>Java + MySql</strong></em></p>
                         <p class="formacion__fecha"><em><strong>En Curso</strong></em></p>
                     </div>
                 </div>
                 <div class="formacion__contenido">
-                    <img src="assets/img/logos academicos y cursos/alkemy.png" alt="Logo de alkemy" class="formacion__img">
+                    <img src="assets/img/logos academicos y cursos/alkemy.png" alt="Logo de alkemy"
+                        class="formacion__img">
                     <div class="formacion__img-contenido">
                         <h3 class="formacion__titulo"><em><strong>Alkemy</strong></em></h3>
                         <p class="formacion__descripcion"><em><strong>Java + SpringBoot + MySql</strong></em></p>
@@ -232,9 +238,71 @@
             </article>
         </section>
 
-        <section id="proyectos" class="proyectos container">
+        <section id="proyectos" class="proyectos_container">
             <h2 class="titulo__principal"><em>Proyectos</em></h2>
             <div class="proyectos__container">
+
+                <div class="proyecto">
+                    <img src="assets/img/proyecto/VentaComputadoras.png" alt="Venta Computadoras" class="proyecto__img">
+                    <div class="proyecto_contenido">
+                        <h3 class="proyecto__titulo">Venta de Computadoras</h3>
+                        <p class="proyecto__descripcion">Aplicación Java/Consola de venta de computadoras, donde podemos
+                            seleccionar perifericos y marcas y generar la orden de compra/venta .</p>
+                        <p class="proyecto__implemento">Herramientas usadas:</p>
+                        <div class="proyecto__contenido-implemento">
+                            <span><strong>Apache Netbeans 17</strong></span>
+                            <span><strong>Java 17</strong></span>
+                        </div>
+                        <div class="proyecto__boton">
+
+                            <a href="https://github.com/diegoarriagadazamora/VentaComputadoras" target="_blank"
+                                class="proyecto__enlace">ver repositorio
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="assets/img/proyecto/CatalogoPeliculas.png" alt="CatalogoPeliculas" class="proyecto__img">
+                    <div class="proyecto_contenido">
+                        <h3 class="proyecto__titulo">Catalogo de Peliculas</h3>
+                        <p class="proyecto__descripcion">Catalogo de peliculas hecho en Java consola donde guardamos en
+                            un archivo txt.</p>
+                        <p class="proyecto__implemento">Herramientas usadas:</p>
+                        <div class="proyecto__contenido-implemento">
+                            <span><strong>Apache Netbeans 17</strong></span>
+                            <span><strong>Java 17</strong></span>
+                        </div>
+                        <div class="proyecto__boton">
+
+                            <a href="https://github.com/diegoarriagadazamora/CatalogoPeliculasApp" target="_blank"
+                                class="proyecto__enlace">ver repositorio
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="assets/img/proyecto/AgendaPersonas.png" alt="Agenda Personas" class="proyecto__img">
+                    <div class="proyecto_contenido">
+                        <h3 class="proyecto__titulo">Agenda Personas</h3>
+                        <p class="proyecto__descripcion">Agenda de personas hecho en Java consola.</p>
+                        <p class="proyecto__implemento">Herramientas usadas:</p>
+                        <div class="proyecto__contenido-implemento">
+                            <span><strong>Apache Netbeans 17</strong></span>
+                            <span><strong>Java 17</strong></span>
+                        </div>
+                        <div class="proyecto__boton">
+
+                            <a href="https://github.com/diegoarriagadazamora/AgendaPersonas" target="_blank"
+                                class="proyecto__enlace">ver repositorio
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="proyecto">
                     <img src="assets/img/proyecto/alketera.png" alt="encriptador de texto" class="proyecto__img">
@@ -370,7 +438,7 @@
                         </div>
 
                     </fieldset>
-<br>
+                    <br>
                     <button type="submit" class="enviar"> Enviar
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
@@ -378,7 +446,7 @@
                     <br>
                     <br>
                     <br>
-                    <br>//saltos de linea para ver boton bubmit
+                    <br>
                     <input type="hidden" name="_next"
                         value="https://diegoarriagadazamora.github.io/Portafolio/thanks.html">
                     <input type="hidden" name="_subject" value="New submission!">
@@ -390,6 +458,7 @@
         <p class="footer__copyright">&copy copyright Diego Arriagada Zamora ||Portafolio 2023</p>
     </footer>
 </body>
-    
+
 <script src="js/scripts.js"></script>
+
 </html>
