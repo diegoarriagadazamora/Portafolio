@@ -23,8 +23,8 @@ html header.header
  .banner__contenedor
  ul .nav__lista
  li.nav__item {
-    padding-left: 20px;
-    font-size: 16px;
+    padding-left: 2px;
+    font-size: 10px;
 }
 }
 @media (750px <= width <= 800px){
@@ -33,7 +33,7 @@ html header.header
     .banner__contenedor
     ul .nav__lista
     .li.nav__item {
-    font-size: 16px;
+    font-size: 10px;
     display: block;
     }
     nav ul li{
@@ -1079,11 +1079,16 @@ body {
 
     footer{
     background-color: #333;
-    position: absolute;
+    position:fixed;
     bottom: 0;
-    width: 100%;
-    height: 68px;
+    width: 100vw;
+    height: 38px;
     color: white;
+    }
+    footer__copyright{
+      width: 100vw;
+        position: relative;
+        bottom: 50;
     }
 
     p {
@@ -1093,9 +1098,8 @@ body {
 .footer {
     background-color: var(--color-fondo);
     color: var(--color-menu);
-    padding: 1rem;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    bottom: 50;
+    width: 100vw;
 }
