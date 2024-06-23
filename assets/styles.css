@@ -6,6 +6,7 @@
     --color-menu1: #000000;
     --color-menu2:#ECF2FF;
     --color-fuente-enlace: #f4f3f7;
+    --color-fuente-enlace2:#3d05e6;
     --color-fondo: #191825;
     --bg-image: url('/assets/img/full.jpeg');
     --color-fondo-secundario: #ECF2FF;
@@ -184,7 +185,7 @@ body {
 
     .redes__link:hover{
         font-size: 2.15rem;
-        color: var(--color-fuente-enlace);
+        color: var(--color-fuente-enlace1);
     }
     .redes__lista{
         display: flex;
@@ -822,7 +823,7 @@ color: var(--color-fuente-enlace);
 }
 
 .iconos__items:hover{
-    background-color: var(--color-fuente-enlace);
+    background-color: var(--color-fuente-enlace2);
 }
 
 @media screen and (min-width: 1024px) {
