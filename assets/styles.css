@@ -8,7 +8,7 @@
     --color-fuente-enlace: #f4f3f7;
     --color-fuente-enlace2:#3d05e6;
     --color-fondo: #191825;
-    --bg-image: url('https://github.com/diegoarriagadazamora/Portafolio/blob/master/assets/img/full.jpeg');
+    --bg-image: url('/assets/img/full.jpeg');
     --color-fondo-secundario: #ECF2FF;
     --valido: #1ed12d;
     --invalido: #bb2929;
@@ -412,7 +412,7 @@ nav {
     margin-top:2px;
 }
 .banner{
-    background-image: url('https://github.com/diegoarriagadazamora/Portafolio/blob/master/assets/img/full.jpeg');
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
 background-attachment:fixed;
 background-size: cover;
