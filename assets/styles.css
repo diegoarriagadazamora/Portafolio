@@ -412,8 +412,10 @@ nav {
     margin-top:2px;
 }
 .banner{
-    background-image: var(--bg-image);
+    background-image: url('https://github.com/diegoarriagadazamora/Portafolio/blob/master/assets/img/full.jpeg');
     background-repeat: no-repeat;
+background-attachment:fixed;
+background-size: cover;
     width: 100%;
     height: 100%;
     /* background-color: var(--color-fondo); */
